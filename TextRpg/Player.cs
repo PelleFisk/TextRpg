@@ -27,6 +27,14 @@ namespace TextRpg
         public int mods { get; set; }
         public int level { get; set; }
         public int skillPoints { get; set; }
+        public int weaponDamage { get; set; }
+        public int weaponSellValue { get; set; }
+        public string? currentWeaponName { get; set; }
+        public string? currentWeaponRarity { get; set; }
+        public string? currentZone { get; set; }
+        public int levelReqZone { get; set; }
+        public int difZone { get; set; }
+        public int questCompleted { get; set; }
 
         public void init()
         {
@@ -41,34 +49,45 @@ namespace TextRpg
             dexterity = 5;
             money = 0;
             exp = 0;
+            level = 0;
             potions = 5;
             mods = 1;
+            currentWeaponName = "Long Sword";
+            currentWeaponRarity = "common";
+            weaponDamage = Weapon.GetDamage(currentWeaponRarity);
+            weaponSellValue = Weapon.GetSellValue(currentWeaponRarity);
+            currentZone = "Starter Zone";
+            levelReqZone = 0;
+            difZone = Program.zone.DifZone(currentZone);
+            questCompleted = 0;
+            Program.zones.Add(new Zones(levelReqZone, currentZone));
+            Program.currentWeapons.Add(new Weapon(0, currentWeaponName, weaponSellValue, currentWeaponRarity, weaponDamage));
         }
 
         public int GetCoins()
         {
-            int upper = (10 * mods + 50);
-            int lower = (10 * mods + 10);
+            int upper = (10 * mods + 50 * difZone);
+            int lower = (10 * mods + 10 * difZone);
             return Program.rand.Next(lower, upper);
         }
 
         public int GetDmg()
         {
-            int upper = (2 * mods + 2);
-            int lower = (mods + 1);
+            int upper = (2 * mods + 4 * difZone);
+            int lower = (mods + 4 * difZone);
             return Program.rand.Next(lower, upper);
         }
         public int GetHp()
         {
-            int upper = (1 * mods + 5);
-            int lower = (1 * mods + 3);
+            int upper = (1 * mods + 8 * difZone);
+            int lower = (1 * mods + 5 * difZone);
             return Program.rand.Next(lower, upper);
         }
 
         public int GetXp()
         {
-            int upper = (20 * mods + 50);
-            int lower = (10 * mods + 10);
+            int upper = (20 * mods + 100 * difZone);
+            int lower = (10 * mods + 20 * difZone);
             return Program.rand.Next(lower, upper);
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using TextRpg;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,10 @@ namespace TextRpg
                 difP = 300 + 100 * p.mods;
 
                 Console.Clear();
+
+                Program.area.currentArea = "shop";
+                Program.SaveArea();
+
                 Console.WriteLine("        Shop        ");
                 Console.WriteLine("====================");
                 Console.WriteLine("(W)eapon :         $" + weaponP);
@@ -39,6 +44,7 @@ namespace TextRpg
                 Console.WriteLine("(Q)uit:   // Quits the Game and Saves");
                 Console.WriteLine("(S)ave:  // Saves the game without quitting");
                 Console.WriteLine("(Skill)tree:  // Goes to the skilltree");
+                Console.WriteLine("(Shop) of weapons:   // Goes to the Weapon Shop");
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine(p.name + "'s  Stats  ");
@@ -52,6 +58,7 @@ namespace TextRpg
                 Console.WriteLine("Potions: " + p.potions);
                 Console.WriteLine("Difficulty Mod: " + p.mods);
                 Console.WriteLine("Skill Points: " + p.skillPoints);
+                Console.WriteLine("Current Zone: " + p.currentZone);
 
 
                 Console.WriteLine("Xp: ");
@@ -76,10 +83,16 @@ namespace TextRpg
                     TryBuy("potion", potionP, p);
                 }
                 else if (input == "d" || input == "difficulty")
+                {
                     TryBuy("difficulty", difP, p);
+                }
                 else if (input == "s" || input == "save")
                 {
                     Program.SavePlayer();
+                    Program.SaveWeapons();
+                    Program.SaveArea();
+                    Program.SaveZone();
+                    Program.SaveQuest();
                 }
                 else if (input == "skill" || input == "skilltree")
                 {
@@ -87,10 +100,23 @@ namespace TextRpg
                 }
                 else if (input == "q" || input == "quit")
                 {
+                    Program.SavePlayer();
+                    Program.SaveWeapons();
+                    Program.SaveArea();
+                    Program.SaveZone();
+                    Program.SaveQuest();
                     Environment.Exit(0);
                 }
+                else if (input == "shop")
+                {
+                    WeaponStore.RunWeaponShop(p);
+                }
                 else if (input == "e" || input == "exit")
+                {
+                    Program.area.currentArea = "";
+                    Program.SaveArea();
                     break;
+                }
             }
         }
 
