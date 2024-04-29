@@ -1,11 +1,4 @@
-﻿using TextRpg;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TextRpg
+﻿namespace TextRpg
 {
     class Shop
     {
@@ -17,26 +10,19 @@ namespace TextRpg
         public static void RunShop(Player p)
         {
             int potionP;
-            int armourP;
-            int weaponP;
             int difP;
+            Program.area.currentArea = "shop";
+            Program.SaveArea();
 
             while (true)
             {
                 potionP = 20 + 10 * 2;
-                armourP = 100 * (p.armour + 1);
-                weaponP = 100 * p.minDmg;
                 difP = 300 + 100 * p.mods;
 
                 Console.Clear();
 
-                Program.area.currentArea = "shop";
-                Program.SaveArea();
-
                 Console.WriteLine("        Shop        ");
                 Console.WriteLine("====================");
-                Console.WriteLine("(W)eapon :         $" + weaponP);
-                Console.WriteLine("(A)rmor :          $" + armourP);
                 Console.WriteLine("(P)otions :        $" + potionP);
                 Console.WriteLine("(D)ifficulty       $" + difP);
                 Console.WriteLine("====================");
@@ -44,7 +30,8 @@ namespace TextRpg
                 Console.WriteLine("(Q)uit:   // Quits the Game and Saves");
                 Console.WriteLine("(S)ave:  // Saves the game without quitting");
                 Console.WriteLine("(Skill)tree:  // Goes to the skilltree");
-                Console.WriteLine("(Shop) of weapons:   // Goes to the Weapon Shop");
+                Console.WriteLine("(U)niversal shop:   // Goes to the Weapon Shop");
+                Console.WriteLine("(F)action:   // Goes to the factions");
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine(p.name + "'s  Stats  ");
@@ -54,7 +41,6 @@ namespace TextRpg
                 Console.WriteLine("Coins: " + p.money);
                 Console.WriteLine("Min Dmg: " + p.minDmg);
                 Console.WriteLine("Max Dmg: " + p.maxDmg);
-                Console.WriteLine("Armour: " + p.armour);
                 Console.WriteLine("Potions: " + p.potions);
                 Console.WriteLine("Difficulty Mod: " + p.mods);
                 Console.WriteLine("Skill Points: " + p.skillPoints);
@@ -70,15 +56,7 @@ namespace TextRpg
                 Console.WriteLine("====================");
 
                 string input = Console.ReadLine()!.ToLower();
-                if (input == "w" || input == "weapon")
-                {
-                    TryBuy("weapon", weaponP, p);
-                }
-                else if (input == "a" || input == "armor")
-                {
-                    TryBuy("armour", armourP, p);
-                }
-                else if (input == "p" || input == "potion")
+                if (input == "p" || input == "potion")
                 {
                     TryBuy("potion", potionP, p);
                 }
@@ -105,11 +83,16 @@ namespace TextRpg
                     Program.SaveArea();
                     Program.SaveZone();
                     Program.SaveQuest();
+                    Program.SaveArmour();
                     Environment.Exit(0);
                 }
-                else if (input == "shop")
+                else if (input == "u" || input == "universal")
                 {
-                    WeaponStore.RunWeaponShop(p);
+                    Shops.RunShop(p);
+                }
+                else if (input == "f" || input == "faction")
+                {
+                    Program.factions.FactionChoice();
                 }
                 else if (input == "e" || input == "exit")
                 {
@@ -126,15 +109,9 @@ namespace TextRpg
             {
                 if (item == "potion")
                     p.potions++;
-                else if (item == "armour")
-                    p.armour++;
                 else if (item == "difficulty")
                     p.mods++;
-                else if (item == "weapon")
-                {
-                    p.minDmg++;
-                    p.maxDmg++;
-                }
+
                 p.money -= cost;
             }
             else

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AnRmUlY7zhZMaBsgxMrdo047p3hvJEDnfhwK7RH51BlqS9MW93t7a/qMf3FJZSC7pvtIiTw7RV5sPx21EK0ogw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\TextRpg.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.3\\microsoft.net.illink.tasks.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

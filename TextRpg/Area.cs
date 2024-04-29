@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TextRpg
+﻿namespace TextRpg
 {
     class Area
     {
@@ -18,12 +12,19 @@ namespace TextRpg
                     Shop.RunShop(Program.currentPlayer);
                     break;
                 case "weapon shop":
-                    WeaponStore.RunWeaponShop(Program.currentPlayer);
+                    Shops.RunWeaponShop(Program.currentPlayer);
                     break;
                 case "skill tree":
                     SkillTree.SkillTrees();
                     break;
-                default:
+                case "spell shop":
+                    Shops.RunSpellShop(Program.currentPlayer);
+                    break;
+                case "universal shop":
+                    Shops.RunShop(Program.currentPlayer);
+                    break;
+                case "armour shop":
+                    Shops.RunArmourShop(Program.currentPlayer);
                     break;
             }
         }

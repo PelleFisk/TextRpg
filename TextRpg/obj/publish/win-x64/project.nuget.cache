@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "rjEDb3RW0iIvbHYyCPQKfxlHY5S3qCYMGgOOvEj/YYoazhXP1gDSUzvM4YfFZKp07CJXH4bzQ81RLEth3rV/2w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\TextRpg.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.3\\microsoft.net.illink.tasks.8.0.3.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.3\\microsoft.netcore.app.runtime.win-x64.8.0.3.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.3\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.3.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.3\\microsoft.aspnetcore.app.runtime.win-x64.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

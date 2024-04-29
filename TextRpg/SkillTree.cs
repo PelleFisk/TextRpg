@@ -1,11 +1,4 @@
-﻿using TextRpg;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TextRpg
+﻿namespace TextRpg
 {
     class SkillTree
     {
@@ -14,20 +7,25 @@ namespace TextRpg
             Program.area.currentArea = "skill tree";
             Program.SaveArea();
 
-            Console.WriteLine("Welcome to the skilltree");
-            Console.WriteLine("Your skillpoints: " + Program.currentPlayer.skillPoints);
-            Console.WriteLine("You can upgrade both your max health and damage");
-            Console.WriteLine("Write 'hp' for hp upgrade and 'dmg' for damage upgrade and you can type 'e' to exit");
+            Console.WriteLine("Welcome to the skill-tree");
+            Console.WriteLine("Your skill-points: " + Program.currentPlayer.skillPoints);
+            Console.WriteLine("You can upgrade both your int, dexterity and strength");
+            Console.WriteLine(
+                "Write 'int' for int upgrade and 'dex' for dexterity and 'str' for strength upgrade and you can type 'e' to exit");
             string? input;
             input = Console.ReadLine()!.ToLower();
 
-            if (input == "hp")
+            if (input == "int")
             {
-                UpgradeHp();
+                UpgradeInt();
             }
             else if (input == "dmg")
             {
-                UpgradeDmg();
+                UpgradeDex();
+            }
+            else if (input == "str")
+            {
+                UpgradeStr();
             }
             else if (input == "e")
             {
@@ -35,35 +33,48 @@ namespace TextRpg
             }
         }
 
-        public static void UpgradeHp()
+        public static void UpgradeInt()
         {
             if (Program.currentPlayer.skillPoints >= 1)
             {
-                Program.currentPlayer.maxHp += 5;
+                Program.currentPlayer.intelligence += 5;
                 Program.currentPlayer.skillPoints--;
-                Console.WriteLine("Upgrade max hp to " + Program.currentPlayer.maxHp);
-                Program.quest.StartQuest();
-            }
-            else
-            {
-                Console.WriteLine("You dont have enoguh skill points");
-            }
-        }
-
-        public static void UpgradeDmg()
-        {
-            if (Program.currentPlayer.skillPoints >= 1)
-            {
-                Program.currentPlayer.minDmg += 2;
-                Program.currentPlayer.maxDmg += 2;
-                Program.currentPlayer.skillPoints--;
-                Console.WriteLine("Your max damage is now: " + Program.currentPlayer.maxDmg + ".");
-                Console.WriteLine("Your min damage is now: " + Program.currentPlayer.minDmg + ".");
+                Console.WriteLine("Upgrade intelligence to " + Program.currentPlayer.intelligence);
                 Program.SavePlayer();
             }
             else
             {
-                Console.WriteLine("You dont have enoguh skill points");
+                Console.WriteLine("You dont have enough skill points");
+            }
+        }
+
+        public static void UpgradeDex()
+        {
+            if (Program.currentPlayer.skillPoints >= 1)
+            {
+                Program.currentPlayer.dexterity += 5;
+                Program.currentPlayer.skillPoints--;
+                Console.WriteLine("Your dexterity is now: " + Program.currentPlayer.dexterity);
+                Program.SavePlayer();
+            }
+            else
+            {
+                Console.WriteLine("You dont have enough skill points");
+            }
+        }
+
+        public static void UpgradeStr()
+        {
+            if (Program.currentPlayer.skillPoints >= 1)
+            {
+                Program.currentPlayer.strength += 5;
+                Program.currentPlayer.skillPoints--;
+                Console.WriteLine("Your strength is now: " + Program.currentPlayer.strength);
+                Program.SavePlayer();
+            }
+            else
+            {
+                Console.WriteLine("You dont have enough skill points");
             }
         }
     }

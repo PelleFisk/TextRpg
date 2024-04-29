@@ -1,0 +1,7 @@
+{
+  "currentQuest": null,
+  "enemiesKilled": 0,
+  "enemiesLeft": 0,
+  "isQuestCompleted": false,
+  "isQuestActive": false
+}

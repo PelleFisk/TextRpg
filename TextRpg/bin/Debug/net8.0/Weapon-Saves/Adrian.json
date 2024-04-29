@@ -1,0 +1,13 @@
+[
+  {
+    "id": 0,
+    "name": "",
+    "rarity": "",
+    "cost": 0,
+    "sellValue": 0,
+    "damage": 0,
+    "specialItem": false,
+    "strReq": 0,
+    "currentWeapon": true
+  }
+]

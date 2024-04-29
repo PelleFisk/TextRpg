@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using System.Xml.Linq;
-
-namespace TextRpg
+﻿namespace TextRpg
 {
     [System.Serializable]
     class Quest
     {
-        public string? currentQuest {  get; set; }
+        public string? currentQuest { get; set; }
         public int enemiesKilled { get; set; }
         public int enemiesLeft { get; set; }
         public bool isQuestCompleted { get; set; }
@@ -34,6 +26,7 @@ namespace TextRpg
                 case "Dark Cave":
                     return enemiesKilled = 8;
             }
+
             return 0;
         }
 
@@ -62,7 +55,7 @@ namespace TextRpg
                 exp = 100;
                 coins = 400;
             }
-            else if(enemiesLeft == 8)
+            else if (enemiesLeft == 8)
             {
                 exp = 200;
                 coins = 600;
@@ -96,23 +89,23 @@ namespace TextRpg
                 {
                     int weaponId = 0;
                     weaponId = Program.currentWeapons!.Count();
-                    Program.currentPlayer.currentWeaponName = name;
-                    Program.currentPlayer.currentWeaponRarity = rarity;
-                    Program.currentPlayer.weaponDamage = damage;
-                    Program.currentPlayer.weaponSellValue = sellValue;
-                    Program.currentWeapons!.Add(new Weapon(weaponId, name, sellValue, rarity, damage, true));
+                    Program.weapon.name = name;
+                    Program.weapon.rarity = rarity;
+                    Program.weapon.damage = damage;
+                    Program.weapon.sellValue = sellValue;
+                    Program.currentWeapons!.Add(new Weapon(weaponId, name, sellValue, rarity, damage, true, 0, false));
                 }
                 else if (input == "s")
                 {
                     int weaponId = 0;
                     weaponId = Program.currentWeapons!.Count();
-                    Program.currentWeapons!.Add(new Weapon(weaponId, name, sellValue, rarity, damage, true));
+                    Program.currentWeapons!.Add(new Weapon(weaponId, name, sellValue, rarity, damage, true, 0, false));
                 }
                 else
                 {
                     int weaponId = 0;
                     weaponId = Program.currentWeapons!.Count();
-                    Program.currentWeapons!.Add(new Weapon(weaponId, name, sellValue, rarity, damage, true));
+                    Program.currentWeapons!.Add(new Weapon(weaponId, name, sellValue, rarity, damage, true, 0, false));
                 }
             }
         }

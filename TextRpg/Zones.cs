@@ -1,10 +1,4 @@
-﻿using TextRpg;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace TextRpg
 {
@@ -30,6 +24,12 @@ namespace TextRpg
                     break;
                 case "Dark Cave":
                     levelToEnter = 5;
+                    break;
+                case "Mysticglow Enclave":
+                    levelToEnter = 10;
+                    break;
+                case "Ethereal Grove":
+                    levelToEnter = 20;
                     break;
             }
 
@@ -71,6 +71,14 @@ namespace TextRpg
             {
                 return "Dark Cave";
             }
+            else if (pLevel >= 10 && pLevel < 20)
+            {
+                return "Mysticglow Enclave";
+            }
+            else if (pLevel >= 20 && pLevel < 30)
+            {
+                return "Ethereal Grove";
+            }
 
             return "Starter Zone";
         }
@@ -86,7 +94,14 @@ namespace TextRpg
                 case "Dark Cave":
                     difZone = 2;
                     break;
+                case "Mysticglow Enclave":
+                    difZone = 3;
+                    break;
+                case "Ethereal Grove":
+                    difZone = 4;
+                    break;
             }
+
             return difZone;
         }
     }

@@ -1,0 +1,2 @@
+C:\Users\adria\Code\TextRpg\TextRpg\bin\Release\net8.0\publish\win-x64\TextRpg.pdb
+C:\Users\adria\Code\TextRpg\TextRpg\bin\Release\net8.0\publish\win-x64\TextRpg.exe

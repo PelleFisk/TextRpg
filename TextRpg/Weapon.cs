@@ -1,35 +1,29 @@
-﻿using TextRpg;
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace TextRpg
 {
     [System.Serializable]
-    class Weapon
+    [method: JsonConstructor]
+    class Weapon(
+        int id,
+        string name,
+        int sellValue,
+        string rarity,
+        int damage,
+        bool specialItem,
+        int strReq,
+        bool currentWeapon)
     {
-        public int id { get; set; }
-        public string? name { get; set; }
-        public string? rarity { get; set; }
+        public int id { get; set; } = id;
+        public string? name { get; set; } = name;
+        public string? rarity { get; set; } = rarity;
         public int cost { get; set; }
-        public int sellValue { get; set; }
-        public int damage { get; set; }
-        public bool specialItem { get; set; }
+        public int sellValue { get; set; } = sellValue;
+        public int damage { get; set; } = damage;
+        public bool specialItem { get; set; } = specialItem;
+        public int strReq { get; set; } = strReq;
+        public bool currentWeapon { get; set; } = currentWeapon;
 
-        [JsonConstructor]
-        public Weapon(int id, string name, int sellValue, string rarity, int damage, bool specialItem)
-        {
-            this.name = name;
-            this.id = id;
-            this.rarity = rarity;
-            this.sellValue = sellValue;
-            this.damage = damage;
-            this.specialItem = specialItem;
-        }
 
         public static int GetCost(string? rarity)
         {
@@ -58,7 +52,7 @@ namespace TextRpg
 
         public static int GetSellValue(string? rarity)
         {
-            int sellValue = 0;
+            int sellValue;
             sellValue = GetCost(rarity) / 2;
             return sellValue;
         }
@@ -69,23 +63,38 @@ namespace TextRpg
             switch (rarity)
             {
                 case "common":
-                    damage = 1 * (1 + 3);
+                    damage = 1 * (1 + 3) + ((Program.currentPlayer.currentClass == Player.Classes.Warrior) ? 2 : 0);
                     break;
                 case "uncommon":
-                    damage = 1 * (2 + 3);
+                    damage = 1 * (2 + 3) + ((Program.currentPlayer.currentClass == Player.Classes.Warrior) ? 2 : 0);
                     break;
                 case "rare":
-                    damage = 1 * (3 + 3);
+                    damage = 1 * (3 + 3) + ((Program.currentPlayer.currentClass == Player.Classes.Warrior) ? 2 : 0);
                     break;
                 case "epic":
-                    damage = 1 * (4 + 3);
+                    damage = 1 * (4 + 3) + ((Program.currentPlayer.currentClass == Player.Classes.Warrior) ? 2 : 0);
                     break;
                 case "legendary":
-                    damage = 1 * (5 + 3);
+                    damage = 1 * (5 + 3) + ((Program.currentPlayer.currentClass == Player.Classes.Warrior) ? 2 : 0);
                     break;
             }
 
             return damage;
+        }
+
+        public static int GetStrReq(string rarity)
+        {
+            int strReq = rarity switch
+            {
+                "common" => 1,
+                "uncommon" => 5,
+                "rare" => 7,
+                "epic" => 10,
+                "legendary" => 15,
+                _ => 0
+            };
+
+            return strReq;
         }
 
         public static string GetShopRarity()
@@ -93,26 +102,15 @@ namespace TextRpg
             string? rarity = "";
 
             int randNum = Program.rand.Next(0, 101);
-            if (randNum <= 40)
+            rarity = randNum switch
             {
-                rarity = "common";
-            }
-            else if (randNum > 40 && randNum <= 60)
-            {
-                rarity = "uncommon";
-            }
-            else if (randNum > 60 && randNum <= 70)
-            {
-                rarity = "rare";
-            }
-            else if(randNum > 80 && randNum <= 90)
-            {
-                rarity = "epic";
-            }
-            else if (randNum > 90 && randNum <= 100)
-            {
-                rarity = "legendary";
-            }
+                <= 40 => "common",
+                > 40 and <= 70 => "uncommon",
+                > 70 and <= 80 => "rare",
+                > 80 and <= 90 => "epic",
+                > 90 and <= 100 => "legendary",
+                _ => rarity
+            };
 
             return rarity;
         }
@@ -122,26 +120,15 @@ namespace TextRpg
             string? rarity = "";
 
             int randNum = Program.rand.Next(0, 101);
-            if (randNum <= 60)
+            rarity = randNum switch
             {
-                rarity = "common";
-            }
-            else if (randNum > 60 && randNum <= 85)
-            {
-                rarity = "uncommon";
-            }
-            else if (randNum > 85 && randNum <= 95)
-            {
-                rarity = "rare";
-            }
-            else if (randNum > 95 && randNum <= 99)
-            {
-                rarity = "epic";
-            }
-            else if (randNum == 100)
-            {
-                rarity = "legendary";
-            }
+                <= 60 => "common",
+                > 60 and <= 85 => "uncommon",
+                > 85 and <= 95 => "rare",
+                > 95 and <= 99 => "epic",
+                100 => "legendary",
+                _ => rarity
+            };
 
             return rarity;
         }
@@ -155,32 +142,44 @@ namespace TextRpg
             switch (Program.currentPlayer.currentZone)
             {
                 case "Starter Zone":
-                    switch (randNum)
+                    name = randNum switch
                     {
-                        case 0:
-                            name = "Long Sword";
-                            break;
-                        case 1:
-                            name = "Short Sword";
-                            break;
-                        case 2:
-                            name = "Dagger";
-                            break;
-                    }
+                        0 => "Long Sword",
+                        1 => "Short Sword",
+                        2 => "Dagger",
+                        _ => name
+                    };
+
                     break;
                 case "Dark Cave":
-                    switch (randNum)
+                    name = randNum switch
                     {
-                        case 0:
-                            name = "Dark Blade";
-                            break;
-                        case 1:
-                            name = "Dark Cane";
-                            break;
-                        case 2:
-                            name = "Dark Dagger";
-                            break;
-                    }
+                        0 => "Dark Blade",
+                        1 => "Dark Cane",
+                        2 => "Dark Dagger",
+                        _ => name
+                    };
+
+                    break;
+                case "Mysticglow Enclave":
+                    name = randNum switch
+                    {
+                        0 => "Starshard Longsword",
+                        1 => "Eclipse Reave",
+                        2 => "Moonbeam Dagger",
+                        _ => name
+                    };
+
+                    break;
+                case "Ethereal Grove":
+                    name = randNum switch
+                    {
+                        0 => "Luminara Blade",
+                        1 => "Enigma Warden Blade",
+                        2 => "Ethereal Whisper Scimitar",
+                        _ => name
+                    };
+
                     break;
             }
 

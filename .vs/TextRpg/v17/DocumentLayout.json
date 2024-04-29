@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adria\\Code\\TextRpg\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\boots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\boots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\armour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\armour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\shops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\shops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\encounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\encounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\spells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\spells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\factions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\factions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\zones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\zones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\skilltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\skilltree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|c:\\users\\adria\\code\\textrpg\\textrpg\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC8C96C4-467F-4A8E-A771-2B6DB8204E0B}|TextRpg\\TextRpg.csproj|solutionrelative:textrpg\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Program.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Program.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Program.cs",
+              "RelativeToolTip": "TextRpg\\Program.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAuwKsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T15:25:14.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Player.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Player.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Player.cs",
+              "RelativeToolTip": "TextRpg\\Player.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAtwEAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T13:05:57.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Encounter.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Encounter.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Encounter.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Encounter.cs",
+              "RelativeToolTip": "TextRpg\\Encounter.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAYwJAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T08:21:38.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Shop.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Shop.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Shop.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Shop.cs",
+              "RelativeToolTip": "TextRpg\\Shop.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAYwDQAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T09:18:03.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SkillTree.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\SkillTree.cs",
+              "RelativeDocumentMoniker": "TextRpg\\SkillTree.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\SkillTree.cs",
+              "RelativeToolTip": "TextRpg\\SkillTree.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAABMAAACRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T13:37:12.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Weapon.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Weapon.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Weapon.cs",
+              "RelativeToolTip": "TextRpg\\Weapon.cs",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAwwCIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T20:14:08.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Area.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Area.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Area.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Area.cs",
+              "RelativeToolTip": "TextRpg\\Area.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAAB0AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T20:02:27.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Zones.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Zones.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Zones.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Zones.cs",
+              "RelativeToolTip": "TextRpg\\Zones.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAiwGkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T19:36:27.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Factions.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Factions.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Factions.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Factions.cs",
+              "RelativeToolTip": "TextRpg\\Factions.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAiwD4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T20:18:15.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Quest.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Quest.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Quest.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Quest.cs",
+              "RelativeToolTip": "TextRpg\\Quest.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAUwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T15:51:35.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Spells.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Spells.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Spells.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Spells.cs",
+              "RelativeToolTip": "TextRpg\\Spells.cs",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAqwMoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T20:05:32.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Shops.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Shops.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Shops.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Shops.cs",
+              "RelativeToolTip": "TextRpg\\Shops.cs",
+              "ViewState": "AQIAAFsBAAAAAAAAAAAAANgBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T17:29:55.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Boots.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Boots.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Boots.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Boots.cs",
+              "RelativeToolTip": "TextRpg\\Boots.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAswBIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T20:51:28.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Armour.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Armour.cs",
+              "RelativeDocumentMoniker": "TextRpg\\Armour.cs",
+              "ToolTip": "C:\\Users\\adria\\Code\\TextRpg\\TextRpg\\Armour.cs",
+              "RelativeToolTip": "TextRpg\\Armour.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T20:56:52.187Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
