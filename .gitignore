@@ -1,9 +1,4 @@
-﻿./bin/
-./obj/
-./.git/
-./config/
-./.github/
-./.vs/
-./.vscode/
-./.idea/
-./Setup1/
+﻿/.idea
+/TextRpg.sln
+/TextRpg/bin
+/TextRpg/obj
